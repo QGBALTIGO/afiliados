@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Baixar filmes e séries</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/w3-colors-flat.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<style>
+			.display-flex-header {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.shadow {
+				box-shadow: 1px 1px 23px #C2C2C2;
+			}
+		
+			@media screen and (min-width:600px) {
+				.display-flex-header {
+					flex-direction: row;
+					align-items: center;
+					justify-content: space-between;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		
+		<!-- CABEÇALHO PRINCIPAL DO SITE -->
+		<header class="w3-flat-midnight-blue">
+			<div class="w3-auto display-flex-header w3-padding-16">
+				<a href="#" class="w3-button w3-hover-none">
+					<img src="img/PatinCo.png" alt="" class="w3-image" width="90" height="70">
+				</a>
+				
+				<!-- MENU PRINCIPAL -->
+				<nav class="w3-right w3-mobile">
+					<a href="#" class="w3-button w3-bar-item w3-mobile w3-large w3-flat-sun-flower w3-text-black w3-round w3-ripple">INÍCIO</a>
+					<div class="w3-dropdown-click w3-round w3-mobile">
+						<button type="button" onclick="abrirFecharDropdown(this)" class="w3-button w3-bar-item w3-mobile w3-large w3-round w3-ripple">FILMES <i class="fa-solid fa-angle-down w3-small"></i></button>
+						<div class="w3-dropdown-content w3-bar-block">
+							<a href="#" class="w3-button w3-bar-item w3-mobile">Terror</a>
+							<a href="#" class="w3-button w3-bar-item w3-mobile">Terror</a>
+							<a href="#" class="w3-button w3-bar-item w3-mobile">Terror</a>
+						</div>
+					</div>
+					<div class="w3-dropdown-click w3-round w3-mobile">
+						<button type="button" onclick="abrirFecharDropdown(this)" class="w3-button w3-bar-item w3-mobile w3-large w3-round w3-ripple">SÉRIES <i class="fa-solid fa-angle-down w3-small"></i></button>
+						<div class="w3-dropdown-content w3-bar-block">
+							<a href="#" class="w3-button w3-bar-item w3-mobile">Terror</a>
+							<a href="#" class="w3-button w3-bar-item w3-mobile">Ficção</a>
+							<a href="#" class="w3-button w3-bar-item w3-mobile">Mistério</a>
+						</div>
+					</div>
+					<a href="#" class="w3-button w3-bar-item w3-mobile w3-large w3-round w3-ripple">ANIMES E DESENHOS</a>
+					<a href="#" class="w3-button w3-bar-item w3-mobile w3-large w3-round w3-ripple">CONTATO</a>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- SEÇÃO SLIDESHOW COM FILMES E SÉRIES DESTAQUE -->
+		<article class="w3-flat-clouds shadow"  style="position:relative;z-index:-10">
+			<div class="w3-auto">
+				<article class="w3-container w3-padding-24">
+					<h2>EM CARTAZ NOS CINEMAS</h2>
+					<div class="w3-section w3-hover-shadow">
+						<div class="mySlides w3-row w3-animate-opacity">
+							<img src="img/filme01_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme02_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme03_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme04_slide.png" alt="" class="w3-image w3-col l3 s6">
+						</div>
+						<div class="mySlides w3-row w3-animate-opacity">
+							<img src="img/filme05_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme06_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme07_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme08_slide.png" alt="" class="w3-image w3-col l3 s6">
+						</div>
+						<div class="mySlides w3-row w3-animate-opacity">
+							<img src="img/filme09_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme10_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme11_slide.png" alt="" class="w3-image w3-col l3 s6">
+							<img src="img/filme12_slide.png" alt="" class="w3-image w3-col l3 s6">
+						</div>
+					</div>
+					<div class="w3-alert w3-margin-bottom">Nota: <strong>é importante o uso do Utorrent/ Utorrent Web</strong> para poder baixar séries e filmes deste web site:</div>
+					<a href="#" class="w3-btn w3-ripple w3-large w3-round w3-flat-pumpkin w3-text-white w3-margin-bottom">Baixar filmes e séries</a>
+					<a href="#" class="w3-btn w3-ripple w3-large w3-round w3-flat-pumpkin w3-text-white w3-margin-bottom"><img src="img/utorrent_logo.png" alt=""> Baixar Utorrent Web aqui</a>
+				</article>
+			</div>
+		</article>
+		
+		<main class="w3-padding-64">
+			<div class="w3-auto w3-container">
+				<h2>ÚLTIMAS NOVIDADES</h2>
+				
+				<!-- Primeira fileira -->
+				<section class="w3-row">
+					<a href="serie_breaking_bad.html" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/serie_breaking_bad.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar série: Breaking Bad">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 9.5</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUBLADO/LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Breaking Bad: <br>A Quimica do Mau</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_nosso_amigo_extraordinario.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Nosso Amigo Extraordinario">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.0</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Nosso Amigo Extraordinário <br>&#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_freestyle.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Freestyle">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.0</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Freestyle &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_missao_de_sobrevivencia.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Missão de Sobrevivência">
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.0</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>COMPLETA LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Missão de Sobrevivência <br>&#40;2023&#41;</h2>
+					</a>
+				</section>
+				
+				<!-- Segunda fileira -->
+				<section class="w3-row">
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_elementos.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Elementos">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.0</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Elementos &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_a_chamada.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: A Chamada">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.73</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">A Chamada <br>&#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_o_conde.jpg" style="width:100%" width="300" height="450" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: O Conde">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 6.5</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">O Conde &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_amor_a_primeira_vista.jpg" style="width:100%" width="300" height="450" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Amor a Primeira Vista">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 6.813</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Amor a Primeira Vista &#40;2023&#41;</h2>
+					</a>
+				</section>
+				
+				<!-- Terceira fileira -->
+				<section class="w3-row">
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_after_para_sempre.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: After: Para Sempre">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.8</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUBLADO OFICIAL</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">After: Para Sempre &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_assasinato_em_yellowstone.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Assasinato em Yellowstone">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.73</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Assasinato em Yellowstone <br>&#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_acampamento_de_teatro.jpg" style="width:100%" width="300" height="450" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Acampamento de Teatro">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 7</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Acampamento de Teatro &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_em_uma_terra_muito_distante_havia_um_crime.jpg" style="width:100%" width="300" height="450" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Em uma terra muito distante... Havia um crime">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 6.5</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Em uma terra muito <br>distante... <br>Havia um crime &#40;2023&#41;</h2>
+					</a>
+				</section>
+				
+				<!-- Quarta fileira -->
+				<section class="w3-row">
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_elementos.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Elementos">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.0</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Elementos &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_a_chamada.jpg" width="300" height="450" style="width:100%" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: A Chamada">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 5.73</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>LEGENDADO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">A Chamada <br>&#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_o_conde.jpg" style="width:100%" width="300" height="450" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: O Conde">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 6.5</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">O Conde &#40;2023&#41;</h2>
+					</a>
+					<a href="#" class="w3-btn w3-padding w3-col l3 m3 s6 w3-hover-opacity">
+						<div class="w3-display-container">
+							<img src="img/filme_amor_a_primeira_vista.jpg" style="width:100%" width="300" height="450" class="w3-image w3-round w3-hover-grayscale" alt="Baixar filme: Amor a Primeira Vista">
+							
+							<span class="w3-display-topright w3-margin w3-round w3-small w3-flat-sun-flower w3-text-black w3-padding w3-border w3-border-black"><b>IMDb 6.813</b></span>
+							<span class="w3-tiny w3-block w3-center w3-padding w3-flat-clouds">
+								<b>DUAL AUDIO</b>
+							</span>
+						</div>
+						<h2 class="w3-large w3-center">Amor a Primeira Vista &#40;2023&#41;</h2>
+					</a>
+				</section>
+			</div>
+			<div class="w3-center w3-margin-bottom w3-margin-top">
+				<button type="button" disbled class="w3-btn w3-flat-concrete w3-round w3-opacity"><i class="fa-solid fa-chevron-left"></i></button>
+				<a href="#" class="w3-btn w3-round w3-flat-sun-flower w3-text-black" aria-current="page">1</a>
+				<a href="#" class="w3-btn w3-flat-midnight-blue w3-round">2</a>
+				<a href="#" class="w3-btn w3-flat-midnight-blue w3-round">3</a>
+				<a href="#" class="w3-btn w3-flat-midnight-blue w3-round"><i class="fa-solid fa-chevron-right"></i></a>
+			</div>
+		</main>
+		
+		<footer class="w3-flat-midnight-blue w3-padding-32">
+			<div class="w3-auto w3-container w3-row">
+				<nav class="w3-col l4 s6">
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Início</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Melhores séries</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Melhores filmes</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Melhores animes</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Categorias</a>
+				</nav>
+				<nav class="w3-col l4 s6">
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Informe um erro</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Filmes legendados</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Por vir</a>
+					<a href="#" class="w3-button w3-hover-none w3-hover-text-blue w3-block w3-left-align">Assine IPTV</a>
+				</nav>
+				<div class="w3-col l4 w3-center">
+					<h4>Siga-nos:</h4>
+					<a href="#" class="w3-button w3-xlarge w3-hover-none w3-hover-text-blue w3-left-align"><i class="fa-brands fa-facebook"></i></a>
+					<a href="#" class="w3-button w3-xlarge w3-hover-none w3-hover-text-blue w3-left-align"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#" class="w3-button w3-xlarge w3-hover-none w3-hover-text-blue w3-left-align"><i class="fa-brands fa-whatsapp"></i></a>
+					<a href="#" class="w3-button w3-xlarge w3-hover-none w3-hover-text-blue w3-left-align"><i class="fa-brands fa-youtube"></i></a>
+					<a href="#" class="w3-button w3-xlarge w3-hover-none w3-hover-text-blue w3-left-align"><i class="fa-brands fa-tiktok"></i></a>
+					<div class="w3-padding-top-32">
+						<p class="w3-small">&copy; PatinCo 2023-2023 - Todos os Direitos Reservados</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://unpkg.com/htmx.org@1.9.5"></script>
+		
+		<!-- API IMDb -->
+		<script>
+			const data = null;
+
+			const xhr = new XMLHttpRequest();
+			xhr.withCredentials = true;
+
+			xhr.addEventListener('readystatechange', function () {
+				if (this.readyState === this.DONE) {
+					console.log(this.responseText);
+				}
+			});
+
+			xhr.open('GET', 'https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr');
+			xhr.setRequestHeader('X-RapidAPI-Key', 'efae7bd162msh2880f305d04f50cp19de44jsnce5fdd0a9175');
+			xhr.setRequestHeader('X-RapidAPI-Host', 'imdb8.p.rapidapi.com');
+
+			xhr.send(data);
+		</script>
+		
+		<!-- Slideshow -->
+		<script>
+			var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1}
+				x[slideIndex-1].style.display = "block";
+				setTimeout(carousel, 4000); // Change image every 2 seconds
+			}
+		</script>
+		
+		<!-- Dropdown -->
+		<script>
+			function abrirFecharDropdown(elm) {
+				if (elm.nextElementSibling.className.indexOf("w3-show") == -1) { 
+					elm.nextElementSibling.className += " w3-show";
+				} else {
+					elm.nextElementSibling.className = elm.nextElementSibling.className.replace(" w3-show", "");
+				}
+			}
+		</script>
+		<script src="https://kit.fontawesome.com/f492772e4b.js" crossorigin="anonymous"></script>
+	</body>
+</html>
